@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+  
+     <TextView
+        android:id="@+id/labelIntro"
+        android:text="@string/txt_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".15"
+        android:orientation="vertical"
+        android:background="#CAE1FF"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium">
+    </TextView>
+    
+    <LinearLayout
+        android:id="@+id/layout_up"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_weight=".75"
+        android:gravity="center"
+        android:orientation="vertical" >
+		
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_name"
+            android:textSize="35sp" />
+
+        <QuickContactBadge
+            android:id="@+id/quickContactBadge1"
+            android:layout_width="132dp"
+            android:layout_height="136dp"
+            android:src="@drawable/user_male"/>
+
+       
+        <TextView
+            android:id="@+id/txtId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_id"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/txtPrivilege"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_privilege"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtAccess"
+        android:includeFontPadding="false"
+        android:text="@string/txt_access"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".30"
+        android:orientation="vertical"
+        android:background="#FF0000"
+        android:gravity="center">    
+
+    </TextView>
+  
+
+</LinearLayout>  

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/labelAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_user"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true" 
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/labelName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelAdd"
+        android:text="@string/name" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelName"
+        android:inputType="textCapWords" />
+
+    <TextView
+        android:id="@+id/labelRfid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editName"
+        android:text="@string/rfid" />
+
+    <EditText
+        android:id="@+id/editRfid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelRfid"
+        android:inputType="textCapCharacters" />
+
+    <TextView
+        android:id="@+id/labelPrivilege"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editRfid"
+        android:text="@string/privilege" />
+
+    <Spinner
+        android:id="@+id/spnPrivilege"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelPrivilege" 
+        android:entries="@array/spinner_privileges"
+        android:prompt="@string/select_privilege"/>
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spnPrivilege"
+        android:layout_centerHorizontal="true"
+        android:text="@string/create" 
+        android:layout_marginTop="20dp"
+        
+        />
+
+
+
+</RelativeLayout>

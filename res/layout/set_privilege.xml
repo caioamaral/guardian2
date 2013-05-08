@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0EEEE" >
+
+    <Spinner
+        android:id="@+id/spnSetPrivilege"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp" 
+        android:entries="@array/spinner_privileges"
+        android:prompt="@string/set_privilege"/>
+
+    <TextView
+        android:id="@+id/labelPrivilege"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spnSetPrivilege"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="109dp"
+        android:text="@string/set_privilege"
+		android:entries="@array/spinner_privileges"
+        android:prompt="@string/select_privilege"
+        android:gravity="center"
+        android:textSize="30sp"
+       	/>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spnSetPrivilege"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:text="@string/start" />
+
+</RelativeLayout>

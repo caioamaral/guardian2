@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Guardian 2.0</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="starter_message">Smart Guardian</string>
+    <string name="app_name_for_database">guardian2db</string>
+    <string name="txt_name">Name</string>
+    <string name="txt_id">Id</string>
+    <string name="txt_privilege">Privilege</string>
+    <string name="txt_access">ACCESS DENIED</string>
+    <string name="txt_header">Pass your Keychain on Reader</string>
+    <string name="send">Send</string>
+    <string name="connect_device">Connect Device</string>
+    <string name="manage_users">Manage Users"@android:drawable/ic_menu_search""@android:drawable/ic_menu_search"</string>
+    <string name="name">User Name</string>
+    <string name="privilege">Privilege</string>
+    <string name="add_user">Add User</string>
+    <string name="rfid">RFID</string>
+    <string name="create">Create</string>
+    <string-array name="spinner_privileges">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string name="select_privilege">Select privilege</string>
+    <string name="set_privilege">Please set the required privilege</string>
+    <string name="start">Start</string>
+    
+    
+
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.guardian2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="10" />
+
+    <application
+        android:name="Guardian"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.guardian2.SplashScreen" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"> </action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+           </intent-filter>
+        </activity>
+        <activity
+            android:name="com.guardian2.SetRoomPrivilege"
+            android:label="@string/app_name" >
+            <intent-filter>
+            	<action android:name="android.intent.action.VIEW"></action>
+            	<category android:name="android.intent.category.DEFAULT"></category>
+            	<category android:name="android.intent.category.BROWSABLE"></category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.guardian2.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+            	<action android:name="android.intent.action.VIEW"></action>
+            	<category android:name="android.intent.category.DEFAULT"></category>
+            	<category android:name="android.intent.category.BROWSABLE"></category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.guardian2.AddUser"
+            android:label="@string/app_name" >
+            <intent-filter>
+            	<action android:name="android.intent.action.VIEW"></action>
+            	<category android:name="android.intent.category.DEFAULT"></category>
+            	<category android:name="android.intent.category.BROWSABLE"></category>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
